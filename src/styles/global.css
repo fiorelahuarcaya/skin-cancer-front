@@ -1,0 +1,165 @@
+@import "@fontsource/lexend";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    min-height: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+  }
+  
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 1140px) {
+    .wrapper {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .wrapper {
+      padding: 0 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .wrapper {
+      padding: 0 15px;
+    }
+  }
+  
+  :root {
+    --text-primary: #fff;
+
+    --primary-50: #E6F2FF;
+    --primary-100: #B3D7FF;
+    --primary-200: #99CAFF;
+    --primary-300: #66AFFF;
+    --primary-400: #3395FF;
+    --primary-500: #007aff;
+    --primary-600: #0062CC;
+    --primary-700: #004999;
+    --primary-800: #003166;
+    --primary-900: #00254D;
+
+    --secondary-500: #faf3f4;
+  
+    --background-gradient: linear-gradient(
+      111.43deg,
+      #bebfd7 5.75%,
+      #ebe6ed 31.48%,
+      #faf3f4 53.47%,
+      #f5c6c7 93.85%
+    );
+    --gradient: linear-gradient(
+      111.43deg,
+      var(--primary-500) 5.75%,
+      var(--secondary-500) 31.48%
+    );
+  
+    --font-heading: "Lexend", serif;
+    --font-body: "Lexend", sans-serif;
+
+    --section-padding: 3em;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-primary);
+  
+    background-color: var(--primary-900);
+  }
+  
+  button,
+  .btn {
+    outline: none;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  a,
+  input,
+  textarea,
+  p,
+  span,
+  select,
+  li {
+    font-family: var(--font-body);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4em;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .small-text {
+    font-size: 0.75rem;
+  }
+  
+  /* width and height */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--primary-500);
+    border-left: 0.1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-500);
+    border: 3px solid var(--primary-500);
+    border-radius: 15px;
+  }
+  
