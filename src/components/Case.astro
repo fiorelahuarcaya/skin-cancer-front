@@ -1,0 +1,101 @@
+<div class="case">
+  <div class="wrapper">
+    <div class="header">
+      <h2>
+        Más de <span>14,000 vidas</span> fueron salvadas
+      </h2>
+      <p>
+        Conoce algunas de las historias de lucha y esperanza de nuestros
+        pacientes
+      </p>
+    </div>
+
+    <div class="content">
+      <div class="text">
+        <svg
+          width="37"
+          height="37"
+          viewBox="0 0 37 37"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.5731 30.0725C29.76 30.0725 31.5304 29.4601 32.8842 28.2352C34.238 27.0103 34.9149 25.3814 34.9149 23.3486C34.9149 21.2115 34.2901 19.5566 33.0404 18.3838C31.7907 17.2111 30.1245 16.6247 28.0417 16.6247C25.5945 16.6247 23.6939 17.4326 22.3401 19.0484C22.236 18.6835 22.1839 18.1102 22.1839 17.3283C22.1839 16.338 22.3141 15.478 22.5744 14.7482C22.991 13.4451 23.733 12.2072 24.8004 11.0344C25.8678 9.86164 27.0785 8.96251 28.4323 8.33702L27.7293 6.92969C25.0217 8.18065 22.965 9.95285 21.5591 12.2463C20.1532 14.5397 19.4503 17.0417 19.4503 19.7521C19.4503 21.3158 19.6325 22.7492 19.997 24.0523C20.3615 25.3554 20.8301 26.3978 21.4029 27.1797C22.7046 29.1083 24.7614 30.0725 27.5731 30.0725ZM9.60916 30.0725C11.7961 30.0725 13.5664 29.4601 14.9202 28.2352C16.274 27.0103 16.9509 25.3814 16.9509 23.3486C16.9509 21.2115 16.3261 19.5566 15.0764 18.3838C13.8268 17.2111 12.1606 16.6247 10.0778 16.6247C7.63052 16.6247 5.72999 17.4326 4.37618 19.0484C4.27204 18.6835 4.21997 18.1102 4.21997 17.3283C4.21997 16.338 4.35015 15.478 4.61049 14.7482C5.02705 13.4451 5.76904 12.2072 6.83646 11.0344C7.90389 9.86164 9.1145 8.96251 10.4683 8.33702L9.76537 6.92969C7.05776 8.18065 5.00101 9.95285 3.59514 12.2463C2.18927 14.5397 1.48633 17.0417 1.48633 19.7521C1.48633 21.3158 1.66857 22.7492 2.03306 24.0523C2.39754 25.3554 2.86617 26.3978 3.43893 27.1797C4.74067 29.1083 6.79741 30.0725 9.60916 30.0725Z"
+            fill="#01A2C2"></path>
+        </svg>
+        <p>
+            Estoy muy agradecida con el personal de quimio de Oncosalud por el acompañamiento y ánimo recibido, desde que me detectaron cáncer de ovario ya que tuve mucho miedo y creí que era el final, pero logré vencerlo.
+        </p>
+
+        <div class="description">
+            <b>Historia de Mónica Porro</b>
+            <p>Paciente de cáncer de ovario avanzado</p>
+        </div>
+
+        <a href="/" class="btn">Ver más historias</a>
+      </div>
+
+      <img src="/images/case-cancer.png" alt="Historia de Mónica">
+    </div>
+  </div>
+</div>
+
+<style>
+  .case {
+    padding: 64px;
+    background-color: var(--primary-50);
+  }
+
+  .case .header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    align-items: center;
+
+    margin-bottom: 48px;
+  }
+
+  .header h2 {
+    font-size: 32px;
+    color: var(--primary-800);
+  }
+
+  .header h2 span {
+    color: var(--primary-500);
+    font-weight: 600;
+  }
+
+  .wrapper .content{
+    display: flex;
+    flex-direction: row;
+
+    gap: 32px;
+  }
+
+  .content img{
+    border-radius: 24px;
+    width: calc(50% - 48px);
+  }
+
+  .content .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .text .btn {
+    background-color: var(--primary-600);
+    color: white;
+    font-weight: 600;
+
+    width: fit-content;
+    transition-property: color, background-color;
+    transition-duration: .3s;
+  }
+
+  .text .btn:hover {
+    background-color: var(--primary-500);
+    color: white;
+  }
+</style>

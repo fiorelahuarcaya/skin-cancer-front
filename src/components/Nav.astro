@@ -1,0 +1,54 @@
+---
+import Logo from "./svgs/Logo.astro";
+---
+
+<div class="nav">
+  <div class="wrapper">
+    <a href="/"><Logo /></a>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/servicios">Servicios</a></li>
+      <li><a href="/diagnostico" class="btn">Mi diagnóstico</a></li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .nav {
+    background-color: white;
+    width: 100%;
+    padding: 24px 0px;
+  }
+
+  .nav .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-gray);
+  }
+
+  .wrapper ul {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    list-style: none;
+  }
+
+  .wrapper ul li a:hover {
+    font-weight: 600;
+  }
+
+  .wrapper ul .btn {
+    color: var(--primary-500);
+    border: 2px solid var(--primary-500);
+    font-weight: 600;
+    transition-property: color, background-color;
+    transition-duration: .3s;
+  }
+
+  .wrapper ul .btn:hover {
+    background-color: var(--primary-500);
+    color: white;
+  }
+</style>
