@@ -1,4 +1,6 @@
 @import "@fontsource/lexend";
+@import "@fontsource/lexend/300";
+@import "@fontsource/lexend/400";
 
 * {
     box-sizing: border-box;
@@ -13,7 +15,6 @@
   a {
     text-decoration: none;
     color: inherit;
-    font-weight: 600;
   }
   
   img {
@@ -41,17 +42,17 @@
   
   @media only screen and (max-width: 320px) {
     .wrapper {
-      padding: 0 15px;
+      padding: 0 16px;
     }
   }
   
   :root {
-    --text-primary: #fff;
+    --text-gray: #797979;
 
     --primary-50: #E6F2FF;
     --primary-100: #B3D7FF;
     --primary-200: #99CAFF;
-    --primary-300: #66AFFF;
+    --primary-300: #66AFFF; 
     --primary-400: #3395FF;
     --primary-500: #007aff;
     --primary-600: #0062CC;
@@ -60,20 +61,7 @@
     --primary-900: #00254D;
 
     --secondary-500: #faf3f4;
-  
-    --background-gradient: linear-gradient(
-      111.43deg,
-      #bebfd7 5.75%,
-      #ebe6ed 31.48%,
-      #faf3f4 53.47%,
-      #f5c6c7 93.85%
-    );
-    --gradient: linear-gradient(
-      111.43deg,
-      var(--primary-500) 5.75%,
-      var(--secondary-500) 31.48%
-    );
-  
+
     --font-heading: "Lexend", serif;
     --font-body: "Lexend", sans-serif;
 
@@ -83,23 +71,17 @@
   body {
     font-family: var(--font-body);
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: var(--text-primary);
-  
-    background-color: var(--primary-900);
   }
   
   button,
   .btn {
-    outline: none;
-    border: none;
     padding: 1em 2em;
     border-radius: 2em;
     cursor: pointer;
-    font-weight: 700;
-    font-size: 12px;
+
+    font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -112,6 +94,7 @@
   span,
   select,
   li {
+    font-weight: 400;
     font-family: var(--font-body);
   }
   
@@ -151,15 +134,15 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--primary-500);
+    box-shadow: inset 0 0 5px var(--primary-300);
     border-left: 0.1px solid rgba(0, 0, 0, 0.2);
     border-radius: 15px;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--primary-500);
-    border: 3px solid var(--primary-500);
+    background: var(--primary-300);
+    border: 3px solid var(--primary-300);
     border-radius: 15px;
   }
   
