@@ -235,7 +235,7 @@
     width: fit-content;
   }
 
-  .view-preview .btn:hover {
+  .btn:hover {
     background-color: var(--primary-700);
   }
 
