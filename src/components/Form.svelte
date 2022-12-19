@@ -7,6 +7,8 @@
   let imageUrl = "";
   let show = false;
 
+  import { API_URL } from "../utils/constants";
+
   function volver() {
     message = "";
     predict = 0;
@@ -33,7 +35,7 @@
     };
 
     try {
-      const res = await fetch("http://localhost:5000/image/", options);
+      const res = await fetch(`${API_URL}image/`, options);
       const data = await res.json();
       console.log(data);
       predict = data.predict;
@@ -249,8 +251,7 @@
   }
 
   .result img {
-    aspect-ratio: 1/1;
-    width: 320px;
+    height: 320px;
   }
 
   .result .response ul {
