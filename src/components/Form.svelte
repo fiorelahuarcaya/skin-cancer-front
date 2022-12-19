@@ -35,7 +35,7 @@
     };
 
     try {
-      const res = await fetch(`${API_URL}image/`, options);
+      const res = await fetch(`${API_URL}/image/`, options);
       const data = await res.json();
       console.log(data);
       predict = data.predict;
